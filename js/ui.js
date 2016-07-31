@@ -9,7 +9,7 @@ function GuessUI() {
 
     var input = this.input_field.value;
     this.addPlayerMessage(input);
-    input_field.value = "";
+    this.input_field.value = "";
 
     this.listeners.forEach(function(l) {
       l(input);
@@ -17,7 +17,7 @@ function GuessUI() {
   }.bind(this));
 }
 
-GuessUI.prototype.addListener = function(listener) {
+GuessUI.prototype.addInputListener = function(listener) {
   this.listeners.push(listener);
 };
 

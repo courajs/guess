@@ -8,6 +8,7 @@ body {
 
 .output-frame {
   height: 80vh;
+  overflow: auto;
   background-color: #ddd;
   border: 4px ridge #999;
 }
