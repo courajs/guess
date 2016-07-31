@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px;
+}
+
+.output-frame {
+  height: 80vh;
+  background-color: #ddd;
+  border: 4px ridge #999;
+}
+
+.message {
+  width: 80%;
+  border: 4px ridge #999;
+  border-radius: 8px;
+}
+
+.message.computer {
+  background-color: cornflowerblue;
+  border-color: cornflowerblue;
+}
+.message.player {
+  background-color: lawngreen;
+  border-color: lawngreen;
+  margin-left: 20%;
+}
+
+.input-form {
+  width: 100%;
+  display: flex;
+  background-color: #ddd;
+  border: 4px ridge #999;
+}
