@@ -25,12 +25,14 @@ GuessUI.prototype.addPlayerMessage = function addPlayerMessage(text) {
   var message = create_message(text);
   message.classList.add('player');
   this.output_frame.appendChild(message);
+  message.scrollIntoView();
 };
 
 GuessUI.prototype.addComputerMessage = function addPlayerMessage(text) {
   var message = create_message(text);
   message.classList.add('computer');
   this.output_frame.appendChild(message);
+  message.scrollIntoView();
 };
 
 function create_message(text) {
